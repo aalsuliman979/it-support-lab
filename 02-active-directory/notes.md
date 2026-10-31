@@ -33,6 +33,12 @@ Files are in the `screenshots` folder:
 - `04-domain-check.png`: domain name check in Command Prompt
 - `05-organizational-units.png`: the three OUs
 - `06-users-it.png`, `07-users-hr.png`, `08-users-sales.png`: users in each OU
+- `09-group-members.png`, `10-groups.png`, `11-groups.png`: the groups and their members
+
+### 5. Created security groups
+In each OU I created a security group (Global scope): **IT-Team**, **HR-Team** and **Sales-Team**. Then I added each user to the group of their department through the group's Properties > Members tab.
+
+The reason is that permissions are easier to manage on groups. If a new person joins HR later, I only add them to HR-Team and they get everything the team has, instead of setting permissions user by user.
 
 ## Next
-Create security groups for each department and give them access to a shared folder, then join a client PC to the domain.
+Create shared folders for each department and give permissions to the groups, then join a client PC to the domain and test access.
